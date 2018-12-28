@@ -1,0 +1,27 @@
+<h3 class="leftpanel-section section-caption">Categories</h3>
+@Html.DevExpress().NavBar(navBarSettings => {
+    navBarSettings.SyncSelectionMode = SyncSelectionMode.CurrentPathAndQuery;
+    navBarSettings.Name = "categoriesNavBar";
+    navBarSettings.AllowSelectItem = true;
+    navBarSettings.ShowGroupHeaders = false;
+    navBarSettings.Width = Unit.Percentage(100);
+    navBarSettings.ControlStyle.CssClass = "filters-navbar";
+    navBarSettings.Styles.Item.CssClass = "item";
+    navBarSettings.Groups.Add(group => {
+        group.Items.Add(item => {
+            item.Name = "Category1";
+            item.Text = "Category1";
+            item.NavigateUrl = "FormLayout";
+        });
+        group.Items.Add(item => {
+            item.Name = "Category2";
+            item.Text = "Category2";
+            item.NavigateUrl = "FormLayout?2";
+        });
+        group.Items.Add(item => {
+            item.Name = "Category3";
+            item.Text = "Category3";
+            item.NavigateUrl = "FormLayout?3";
+        });
+    });
+}).GetHtml()
