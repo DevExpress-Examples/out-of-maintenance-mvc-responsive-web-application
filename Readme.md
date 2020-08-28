@@ -9,6 +9,9 @@
 <!-- default file list end -->
 
 # MVC Responsive Web Application template
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/163389368/)**
+<!-- run online end -->
 
 This example demonstrates the MVC Responsive Web Application template-based application with two custom pages: **Form Layout** and **Map**. See the [Getting Started with Responsive Web Application template](https://docs.devexpress.com/AspNet/120713/what's-installed/visual-studio-integration/template-gallery/responsive-web-application-template) topic to learn more.
 
